@@ -59,6 +59,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="0.5962075745033113" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="thumbTintColor" red="0.4823529411764706" green="0.47843137254901957" blue="0.6470588235294118" alpha="0.59775972682119205" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ng0-Xk-TtO"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBC-sP-UyC">
                                         <rect key="frame" x="0.0" y="686" width="374" height="21"/>
@@ -83,13 +86,16 @@
                                             <constraint firstItem="MSQ-fU-8Di" firstAttribute="leading" secondItem="S5s-9d-arV" secondAttribute="trailing" constant="289" id="mQh-sJ-NFw"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-in-O13">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-in-O13">
                                         <rect key="frame" x="-2" y="707" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="aJF-Vt-yU5"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="0.64502276490066224" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="thumbTintColor" red="0.4823529412" green="0.47843137250000001" blue="0.64705882349999999" alpha="0.5977597268" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="rUe-M7-61N"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYZ-md-zr0">
                                         <rect key="frame" x="0.0" y="767" width="374" height="51"/>
@@ -146,6 +152,12 @@
                             <constraint firstItem="yr4-92-GfG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zwJ-ro-XIY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="mXb-mA-nI3" id="JjO-QE-5Xd"/>
+                        <outlet property="heightSlider" destination="eX7-TK-qgJ" id="XLL-FH-1uy"/>
+                        <outlet property="weightLabel" destination="MSQ-fU-8Di" id="aR6-EJ-VlJ"/>
+                        <outlet property="weightSlider" destination="MLO-in-O13" id="9Vd-de-CXZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
